@@ -51,7 +51,8 @@ A high-performance, privacy-first VPN ecosystem powered by **VLESS** and **Reali
 * Features automated server-side routing, secure payment integrations, and microservices for user token rotation.
 * *Stack:* Python, FastAPI, Asyncio, Docker.
 
-#### 🧹 [metafy] comming soon...(https://github.com/motiktop1gg/metafy)
+#### 🧹 [metafy – coming soon...] 
+(https://github.com/motiktop1gg/metafy)
 A lightweight, independent Python CLI tool designed for OSINT defense and metadata sanitization.
 * Automates the process of deep-cleaning tracking metadata and EXIF data from files before public deployment or file-sharing.
 * Uses modular parsing to strip hidden identifiers without corrupting file structures.
