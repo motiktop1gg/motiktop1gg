@@ -45,7 +45,7 @@ $ cat current_session.json
 
 ### 📂 Featured Projects
 
-#### 🌐 [PathVPN](https://github.com/motiktop1gg/PathVPN)
+#### 🌐 [PathVPN](https://t.me/pathvpn_bot)
 A high-performance, privacy-first VPN ecosystem powered by **VLESS** and **Reality** protocols. 
 * Designed to bypass strict network censorship with advanced cryptographic obfuscation.
 * Features automated server-side routing, secure payment integrations, and microservices for user token rotation.
@@ -57,7 +57,7 @@ A lightweight, independent Python CLI tool designed for OSINT defense and metada
 * Uses modular parsing to strip hidden identifiers without corrupting file structures.
 * *Stack:* Python, CLI Architecture.
 
-#### 📶 [brutefi](https://github.com/motiktop1gg/brutefi)
+#### 📶 [brutefy](https://github.com/motiktop1gg/brutefy)
 A modular network testing and automated Wi-Fi security assessment tool.
 * Developed to evaluate wireless infrastructure resilience against automated brute-force vectors and handshake analysis.
 * Built purely for security auditing, network hardening, and vulnerability proof-of-concepts.
@@ -75,11 +75,21 @@ $ tail -n 3 upcoming_milestones.log
 
 ---
 
-### 📊 Git Metrics & Activity
-
-![Stats](https://github-readme-stats.vercel.app/api?username=motiktop1gg&show_icons=true&theme=tokyonight)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=motiktop1gg&layout=compact&theme=tokyonight&hide=html,css)
+### 📊 System Resources & Activity
+```bash
+$ neofetch --user motiktop1gg
+```
+```text
+OS: Arch Linux x86_64 
+Host: Backend-Server-Node-01 
+Kernel: 6.1.0-secure-hardened 
+Uptime: 24/7 (PathVPN Nodes Active) 
+Shell: zsh 5.8 
+CPU: Python 3.12 (Asynchronous Core)
+Keyboard: Blind Typing Mode (~450 CPM)
+Primary Language: Python / FastAPI / Asyncio
+Current Focus: Hardening infrastructure & AppSec
+```
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=motiktop1gg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="motiktop1gg's GitHub Stats" height="180px"/>
