@@ -51,8 +51,7 @@ A high-performance, privacy-first VPN ecosystem powered by **VLESS** and **Reali
 * Features automated server-side routing, secure payment integrations, and microservices for user token rotation.
 * *Stack:* Python, FastAPI, Asyncio, Docker.
 
-#### 🧹 [metafy – coming soon...] 
-(https://github.com/motiktop1gg/metafy)
+#### 🧹 [metafy](https://github.com/motiktop1gg/metafy)
 A lightweight, independent Python CLI tool designed for OSINT defense and metadata sanitization.
 * Automates the process of deep-cleaning tracking metadata and EXIF data from files before public deployment or file-sharing.
 * Uses modular parsing to strip hidden identifiers without corrupting file structures.
@@ -78,9 +77,9 @@ $ tail -n 3 upcoming_milestones.log
 
 ### 📊 Git Metrics & Activity
 
-```bash
-$ curl -s [https://api.github.com/users/motiktop1gg/stats](https://api.github.com/users/motiktop1gg/stats)
-```
+![Stats](https://github-readme-stats.vercel.app/api?username=motiktop1gg&show_icons=true&theme=tokyonight)
+
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=motiktop1gg&layout=compact&theme=tokyonight&hide=html,css)
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=motiktop1gg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="motiktop1gg's GitHub Stats" height="180px"/>
