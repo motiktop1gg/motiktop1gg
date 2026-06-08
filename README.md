@@ -1,5 +1,5 @@
 # 🖥️ motiktop1gg / Matvei Koval
-> **Backend Engineer & AppSec Enthusiast**
+> **Backend Engineer & Frontend developer**
 > *“Control is an illusion. Code is reality.”*
 
 ---
@@ -45,7 +45,7 @@ $ cat current_session.json
 
 ### 📂 Featured Projects
 
-#### 🌐 [PathVPN](https://t.me/pathvpn_bot)
+#### 🌐 [PathVPN](https://t.me/path_vpnbot)
 A high-performance, privacy-first VPN ecosystem powered by **VLESS** and **Reality** protocols. 
 * Designed to bypass strict network censorship with advanced cryptographic obfuscation.
 * Features automated server-side routing, secure payment integrations, and microservices for user token rotation.
