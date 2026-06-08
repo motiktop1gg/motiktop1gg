@@ -90,12 +90,6 @@ Keyboard: Blind Typing Mode (~450 CPM)
 Primary Language: Python / FastAPI / Asyncio
 Current Focus: Hardening infrastructure & AppSec
 ```
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=motiktop1gg&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true" alt="motiktop1gg's GitHub Stats" height="180px"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=motiktop1gg&layout=compact&theme=tokyonight&hide=html,css" alt="motiktop1gg's Top Languages" height="180px"/>
-</p>
-
 ---
 
 ### 🔒 Establish Connection
