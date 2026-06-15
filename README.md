@@ -43,7 +43,8 @@ $ cat current_session.json
 
 ---
 
-![WakaTime СТАТИСТИКА](https://summary-cards.github.io/latest/wakatime?username=motiktop1gg)
+### 📊 My WakaTime Stats
+[![waka-box](https://github-readme-stats.vercel.app/api/gist?id=ТВОЙ_GIST_ID&theme=tokyonight)](https://gist.github.com/0635c4927c5294110fd9f49d3adcd375)
 
 ### 📂 Featured Projects
 
