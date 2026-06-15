@@ -43,6 +43,8 @@ $ cat current_session.json
 
 ---
 
+![WakaTime СТАТИСТИКА](https://summary-cards.github.io/latest/wakatime?username=motiktop1gg)
+
 ### 📂 Featured Projects
 
 #### 🌐 [PathVPN](https://t.me/path_vpnbot)
