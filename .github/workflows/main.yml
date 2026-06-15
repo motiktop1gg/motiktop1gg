@@ -1,0 +1,17 @@
+name: Waka Update
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: maxam2017/waka-box@master
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: 0635c4927c5294110fd9f49d3adcd375
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
