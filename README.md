@@ -44,7 +44,7 @@ $ cat current_session.json
 ---
 
 ### 📊 My WakaTime Stats
-[![waka-box](https://github-readme-stats.vercel.app/api/gist?id=0635c4927c5294110fd9f49d3adcd375&theme=tokyonight)](https://gist.github.com/0635c4927c5294110fd9f49d3adcd375)
+[![waka-box](https://github-readme-stats.vercel.app/api/gist?id=0635c4927c5294110fd9f49d3adcd375&theme=tokyonight&v=2)](https://gist.github.com/0635c4927c5294110fd9f49d3adcd375)
 
 ### 📂 Featured Projects
 
