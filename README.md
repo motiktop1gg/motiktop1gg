@@ -89,7 +89,6 @@ Kernel: 6.1.0-secure-hardened
 Uptime: 24/7 (PathVPN Nodes Active) 
 Shell: zsh 5.8 
 CPU: Python 3.12 (Asynchronous Core)
-Keyboard: Blind Typing Mode (~450 CPM)
 Primary Language: Python / FastAPI / Asyncio
 Current Focus: Hardening infrastructure & AppSec
 ```
