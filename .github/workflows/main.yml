@@ -32,20 +32,21 @@ jobs:
           gh_token = os.getenv('GH_TOKEN')
           waka_key = os.getenv('WAKATIME_API_KEY')
           
-          waka_url = f'https://wakatime.com/api/v1/users/current/statusbar/now?api_key={waka_key}'
+          waka_url = f'https://wakatime.com/api/v1/users/current/durations?date=today&api_key={waka_key}'
           r = requests.get(waka_url)
           if r.status_code != 200:
               print(f'WakaTime API Error: {r.status_code}', r.text)
               exit(1)
               
           waka_data = r.json()
-          lines = ['Пока нет данных из плагина PyCharm']
-          if 'data' in waka_data and 'grand_total' in waka_data['data']:
-              lines = [
-                  f\"Total time: {waka_data['data']['grand_total']['text']}\",
-                  f\"Current project: {waka_data['data']['projects'][0]['name'] if waka_data['data']['projects'] else 'None'}\"
-              ]
-          content = '\n'.join(lines)
+          total_seconds = 0
+          if 'data' in waka_data:
+              total_seconds = sum(item['duration'] for item in waka_data['data'])
+          
+          hours = int(total_seconds // 3600)
+          minutes = int((total_seconds % 3600) // 60)
+          
+          content = f'PyCharm Coding Time: {hours}h {minutes}m' if total_seconds > 0 else 'No coding activity tracked today'
           
           gist_url = f'https://api.github.com/gists/{gist_id}'
           headers = {
@@ -55,7 +56,7 @@ jobs:
           payload = {
               'description': 'WakaTime Progress',
               'files': {
-                  'waka.md': {
+                  'README.md': {
                       'content': content
                   }
               }
