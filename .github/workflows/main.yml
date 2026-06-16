@@ -10,8 +10,60 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: matchai/waka-box@master
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: pip install requests
+        
+      - name: Run Waka Updater
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 0635c4927c5294110fd9f49d3adcd375
+          GIST_ID: '0635c4927c5294110fd9f49d3adcd375'
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+        run: |
+          python -c "
+          import os, requests, base64
+          
+          gist_id = os.getenv('GIST_ID')
+          gh_token = os.getenv('GH_TOKEN')
+          waka_key = os.getenv('WAKATIME_API_KEY')
+          
+          waka_url = f'https://wakatime.com/api/v1/users/current/statusbar/now?api_key={waka_key}'
+          r = requests.get(waka_url)
+          if r.status_code != 200:
+              print(f'WakaTime API Error: {r.status_code}', r.text)
+              exit(1)
+              
+          waka_data = r.json()
+          lines = ['Пока нет данных из плагина PyCharm']
+          if 'data' in waka_data and 'grand_total' in waka_data['data']:
+              lines = [
+                  f\"Total time: {waka_data['data']['grand_total']['text']}\",
+                  f\"Current project: {waka_data['data']['projects'][0]['name'] if waka_data['data']['projects'] else 'None'}\"
+              ]
+          content = '\n'.join(lines)
+          
+          gist_url = f'https://api.github.com/gists/{gist_id}'
+          headers = {
+              'Authorization': f'token {gh_token}',
+              'Accept': 'application/vnd.github.v3+json'
+          }
+          payload = {
+              'description': 'WakaTime Progress',
+              'files': {
+                  'waka.md': {
+                      'content': content
+                  }
+              }
+          }
+          res = requests.patch(gist_url, headers=headers, json=payload)
+          if res.status_code == 200:
+              print('Gist успешно обновлен!')
+          else:
+              print(f'GitHub API Error: {res.status_code}', res.text)
+              exit(1)
+          "
