@@ -43,8 +43,8 @@ $ cat current_session.json
 
 ---
 
-### 📊 Donate me from Russia
-[![Cloudtips-donate]([[https://github-readme-stats.vercel.app/api/gist?id=0635c4927c5294110fd9f49d3adcd375&file=README.md&theme=tokyonight)](https://gist.github.com/0635c4927c5294110fd9f49d3adcd375](https://pay.cloudtips.ru/p/aadfa7dd)](https://pay.cloudtips.ru/p/b677cca9))
+### 💰 Donate me from Russia
+[![CloudTips](https://img.shields.io/badge/Donate-CloudTips-orange?style=for-the-badge&logo=heart)](https://pay.cloudtips.ru/p/b677cca9)
 
 ### 📂 Featured Projects
 
