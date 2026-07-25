@@ -74,7 +74,7 @@ $ tail -n 3 upcoming_milestones.log
 ```
 * 🔄 **Architecture:** Mastering Clean Architecture, Dependency Injection, and Domain-Driven Design (DDD) in Python.
 * ⚡ **Highload:** Implementing distributed task queues via Celery/Redis and exploring event-driven streaming (Kafka/RabbitMQ).
-* 🔒 **AppSec:** Hardening APIs against OWASP Top 10 vulnerabilities, implementing secure JWT authentication lifecycles, and setting up automated CI/CD security linters.
+* 🔒 C++ Security: Fixing memory leaks and buffer bugs, writing safe code, and running automatic security checks in CI/CD.
 
 ---
 
@@ -90,7 +90,7 @@ Uptime: 24/7 (PathVPN Nodes Active)
 Shell: zsh 5.8 
 CPU: Python 3.12 (Asynchronous Core)
 Primary Language: Python / FastAPI / Asyncio
-Current Focus: Hardening infrastructure & AppSec
+Current Focus: C++
 ```
 ---
 
